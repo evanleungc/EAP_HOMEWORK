@@ -238,7 +238,7 @@ csvwrite('reversalfftest.csv', fftable);
 %---------------------------------------------------------------------%
 %---------------------------------------------------------------------%
 %Q8
-data = xlsread('Q8data.xlsx');
+data = csvread('Q8.csv');
 mean = sum(data)/size(data,1);
 n = size(data,1);
 s = sqrt((sum(data-ones(n,1)*mean).^2/(n-1)));
